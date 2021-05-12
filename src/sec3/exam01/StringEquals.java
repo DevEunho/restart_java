@@ -1,0 +1,32 @@
+package sec3.exam01;
+
+public class StringEquals {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String strVar1 = "김자바";
+		String strVar2 = "김자바";
+		
+		if(strVar1==strVar2) {
+			System.out.println("strVar1와 strVar2는 참조가 같음");
+		} else {
+			System.out.println("strVar1와 strVar2는 참조가 다름");
+		}
+		
+		if(strVar1.equals(strVar2)) {
+			System.out.println("strVar1와 strVar2는 문자열가 같음");
+		}
+		
+		String strVar3 = new String("김자바");
+		String strVar4 = new String("김자바");
+		
+		if(strVar3 == strVar4) {
+			System.out.println("strVar3와 strVar4는 참조가 같음");
+		} else {
+			System.out.println("strVar3와 strVar4는 참조가 다름");
+		}
+		if(strVar3.equals(strVar4)) {
+			System.out.println("strVar3와 strVar4는 문자열가 같음");
+		}
+	}
+}
